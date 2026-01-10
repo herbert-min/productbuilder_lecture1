@@ -1,0 +1,92 @@
+:root {
+    --background-color-light: #f0f0f0;
+    --text-color-light: #333;
+    --container-bg-light: #fff;
+    --button-bg-light: #4CAF50;
+    --button-text-light: white;
+
+    --background-color-dark: #121212;
+    --text-color-dark: #f0f0f0;
+    --container-bg-dark: #1e1e1e;
+    --button-bg-dark: #66bb6a;
+    --button-text-dark: #121212;
+}
+
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dark-mode {
+    --background-color-light: var(--background-color-dark);
+    --text-color-light: var(--text-color-dark);
+    --container-bg-light: var(--container-bg-dark);
+    --button-bg-light: var(--button-bg-dark);
+    --button-text-light: var(--button-text-dark);
+}
+
+.container {
+    background-color: var(--container-bg-light);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+    min-height: 300px;
+}
+
+#dinner-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#generate-dinner {
+    background-color: var(--button-bg-light);
+    color: var(--button-text-light);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#generate-dinner:hover {
+    opacity: 0.9;
+}
+
+.theme-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-toggle {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--button-bg-light);
+    color: var(--button-text-light);
+}
