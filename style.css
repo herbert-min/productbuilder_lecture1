@@ -1,1 +1,101 @@
-/* Add styles here */
+:root {
+    --background-color-light: #f0f0f0;
+    --text-color-light: #333;
+    --container-bg-light: #fff;
+    --button-bg-light: #4CAF50;
+    --button-text-light: white;
+    --ball-color-1: #f44336;
+    --ball-color-2: #e91e63;
+    --ball-color-3: #9c27b0;
+    --ball-color-4: #673ab7;
+    --ball-color-5: #3f51b5;
+    --ball-color-6: #2196f3;
+    --ball-color-bonus: #00bcd4;
+
+    --background-color-dark: #121212;
+    --text-color-dark: #f0f0f0;
+    --container-bg-dark: #1e1e1e;
+    --button-bg-dark: #66bb6a;
+    --button-text-dark: #121212;
+}
+
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dark-mode {
+    --background-color-light: var(--background-color-dark);
+    --text-color-light: var(--text-color-dark);
+    --container-bg-light: var(--container-bg-dark);
+    --button-bg-light: var(--button-bg-dark);
+    --button-text-light: var(--button-text-dark);
+}
+
+.container {
+    background-color: var(--container-bg-light);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.numbers-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.number-ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+#generate {
+    background-color: var(--button-bg-light);
+    color: var(--button-text-light);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#generate:hover {
+    opacity: 0.9;
+}
+
+.theme-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-toggle {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--button-bg-light);
+    color: var(--button-text-light);
+}
