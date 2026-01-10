@@ -1,55 +1,36 @@
-const numbersContainer = document.getElementById('numbers');
-const generateBtn = document.getElementById('generate');
+const dinnerRecommendationContainer = document.getElementById('dinner-recommendation');
+const generateBtn = document.getElementById('generate-dinner');
 const themeToggle = document.getElementById('theme-toggle');
 
-const ballColors = [
-    '--ball-color-1',
-    '--ball-color-2',
-    '--ball-color-3',
-    '--ball-color-4',
-    '--ball-color-5',
-    '--ball-color-6',
+const dinnerMenus = [
+    "치킨",
+    "피자",
+    "삼겹살",
+    "된장찌개",
+    "김치찌개",
+    "초밥",
+    "파스타",
+    "족발",
+    "보쌈",
+    "떡볶이",
+    "라멘",
+    "햄버거",
+    "부대찌개",
+    "곱창",
+    "국밥"
 ];
 
-function generateLottoNumbers() {
-    const numbers = new Set();
-    while (numbers.size < 6) {
-        numbers.add(Math.floor(Math.random() * 45) + 1);
-    }
-
-    let bonusNumber;
-    do {
-        bonusNumber = Math.floor(Math.random() * 45) + 1;
-    } while (numbers.has(bonusNumber));
-
-    return { mainNumbers: Array.from(numbers).sort((a, b) => a - b), bonusNumber };
+function recommendDinner() {
+    const randomIndex = Math.floor(Math.random() * dinnerMenus.length);
+    const recommendedMenu = dinnerMenus[randomIndex];
+    dinnerRecommendationContainer.textContent = recommendedMenu;
 }
 
-function displayNumbers(numbers) {
-    numbersContainer.innerHTML = '';
-    numbers.mainNumbers.forEach((number, index) => {
-        const ball = document.createElement('div');
-        ball.classList.add('number-ball');
-        ball.style.backgroundColor = `var(${ballColors[index]})`;
-        ball.textContent = number;
-        numbersContainer.appendChild(ball);
-    });
-
-    const bonusBall = document.createElement('div');
-    bonusBall.classList.add('number-ball');
-    bonusBall.style.backgroundColor = 'var(--ball-color-bonus)';
-    bonusBall.textContent = numbers.bonusNumber;
-    numbersContainer.appendChild(bonusBall);
-}
-
-generateBtn.addEventListener('click', () => {
-    const generatedNumbers = generateLottoNumbers();
-    displayNumbers(generatedNumbers);
-});
+generateBtn.addEventListener('click', recommendDinner);
 
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 });
 
-// Initial generation
-generateBtn.click();
+// Initial recommendation
+recommendDinner();

@@ -4,13 +4,6 @@
     --container-bg-light: #fff;
     --button-bg-light: #4CAF50;
     --button-text-light: white;
-    --ball-color-1: #f44336;
-    --ball-color-2: #e91e63;
-    --ball-color-3: #9c27b0;
-    --ball-color-4: #673ab7;
-    --ball-color-5: #3f51b5;
-    --ball-color-6: #2196f3;
-    --ball-color-bonus: #00bcd4;
 
     --background-color-dark: #121212;
     --text-color-dark: #f0f0f0;
@@ -45,32 +38,26 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 90%;
+    max-width: 500px;
 }
 
 h1 {
     margin-bottom: 2rem;
 }
 
-.numbers-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 2rem;
-}
-
-.number-ball {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.result-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    gap: 10px;
+    margin-bottom: 2rem;
+    min-height: 60px;
+    font-size: 2rem;
     font-weight: bold;
-    color: white;
 }
 
-#generate {
+#generate-dinner {
     background-color: var(--button-bg-light);
     color: var(--button-text-light);
     border: none;
@@ -81,7 +68,7 @@ h1 {
     transition: background-color 0.3s;
 }
 
-#generate:hover {
+#generate-dinner:hover {
     opacity: 0.9;
 }
 
