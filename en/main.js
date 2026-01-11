@@ -2,6 +2,8 @@ const dinnerNameContainer = document.getElementById('dinner-name');
 const dinnerImageContainer = document.getElementById('dinner-image');
 const generateBtn = document.getElementById('generate-dinner');
 const themeToggle = document.getElementById('theme-toggle');
+const langKrBtn = document.getElementById('lang-kr');
+const langEnBtn = document.getElementById('lang-en');
 
 const dinnerMenus = [
     { name: "Pizza", image: "https://placehold.co/600x400/E74C3C/white?text=Pizza" },
@@ -26,6 +28,14 @@ generateBtn.addEventListener('click', recommendDinner);
 
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
+});
+
+langKrBtn.addEventListener('click', () => {
+    window.location.href = '../index.html'; // Navigate to Korean version
+});
+
+langEnBtn.addEventListener('click', () => {
+    window.location.href = './index.html'; // Navigate to English version
 });
 
 // Initial recommendation

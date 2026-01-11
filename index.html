@@ -10,11 +10,33 @@
     <div class="theme-switcher">
         <button id="theme-toggle">테마 변경</button>
     </div>
+    <div class="language-switcher">
+        <button id="lang-kr">한국어</button>
+        <button id="lang-en">English</button>
+    </div>
     <div class="container">
         <h1>오늘 저녁 뭐 먹지?</h1>
-        <div id="dinner-recommendation" class="result-container"></div>
+        <div id="dinner-recommendation" class="result-container">
+            <img id="dinner-image" src="" alt="추천 저녁 메뉴" style="width: 100%; max-width: 400px; height: auto; border-radius: 10px; display: none;">
+            <p id="dinner-name"></p>
+        </div>
         <button id="generate-dinner">메뉴 추천받기</button>
     </div>
     <script src="main.js"></script>
+    <div class="form-container">
+        <h2>제휴 문의</h2>
+        <form action="https://formspree.io/f/mlggrord" method="POST">
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">이메일:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">문의 내용:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">문의하기</button>
+        </form>
+    </div>
 </body>
 </html>

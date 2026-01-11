@@ -10,6 +10,10 @@
     <div class="theme-switcher">
         <button id="theme-toggle">Toggle Theme</button>
     </div>
+    <div class="language-switcher">
+        <button id="lang-kr">Korean</button>
+        <button id="lang-en">English</button>
+    </div>
     <div class="container">
         <h1>What's for Dinner?</h1>
         <div id="dinner-recommendation" class="result-container">
@@ -19,5 +23,20 @@
         <button id="generate-dinner">Get a Recommendation</button>
     </div>
     <script src="main.js"></script>
+    <div class="form-container">
+        <h2>Partnership Inquiry</h2>
+        <form action="https://formspree.io/f/mzddporj" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
