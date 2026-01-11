@@ -6,21 +6,21 @@ const langKrBtn = document.getElementById('lang-kr');
 const langEnBtn = document.getElementById('lang-en');
 
 const dinnerMenus = [
-    { name: "치킨", image: "https://placehold.co/600x400/FFD700/white?text=치킨" },
-    { name: "피자", image: "https://placehold.co/600x400/FF6347/white?text=피자" },
-    { name: "삼겹살", image: "https://placehold.co/600x400/90EE90/white?text=삼겹살" },
-    { name: "된장찌개", image: "https://placehold.co/600x400/DAA520/white?text=된장찌개" },
-    { name: "김치찌개", image: "https://placehold.co/600x400/B22222/white?text=김치찌개" },
-    { name: "초밥", image: "https://placehold.co/600x400/4682B4/white?text=초밥" },
-    { name: "파스타", image: "https://placehold.co/600x400/F0E68C/white?text=파스타" },
-    { name: "족발", image: "https://placehold.co/600x400/CD853F/white?text=족발" },
-    { name: "보쌈", image: "https://placehold.co/600x400/D2B48C/white?text=보쌈" },
-    { name: "떡볶이", image: "https://placehold.co/600x400/FF4500/white?text=떡볶이" },
-    { name: "라멘", image: "https://placehold.co/600x400/F4A460/white?text=라멘" },
-    { name: "햄버거", image: "https://placehold.co/600x400/8B4513/white?text=햄버거" },
-    { name: "부대찌개", image: "https://placehold.co/600x400/800000/white?text=부대찌개" },
-    { name: "곱창", image: "https://placehold.co/600x400/A0522D/white?text=곱창" },
-    { name: "국밥", image: "https://placehold.co/600x400/DCDCDC/white?text=국밥" }
+    { name: "치킨", image: "images/chicken.png" },
+    { name: "피자", image: "images/pizza.png" },
+    { name: "삼겹살", image: "images/pork_belly.png" },
+    { name: "된장찌개", image: "images/doenjangjjigae.png" },
+    { name: "김치찌개", image: "images/kimchijjigae.png" },
+    { name: "초밥", image: "images/sushi.png" },
+    { name: "파스타", image: "images/pasta.png" },
+    { name: "족발", image: "images/jokbal.png" },
+    { name: "보쌈", image: "images/bossam.png" },
+    { name: "떡볶이", image: "images/tteokbokki.png" },
+    { name: "라멘", image: "images/ramen.png" },
+    { name: "햄버거", image: "images/hamburger.png" },
+    { name: "부대찌개", image: "images/budaejjigae.png" },
+    { name: "곱창", image: "images/gopchang.png" },
+    { name: "국밥", image: "images/gukbap.png" }
 ];
 
 function recommendDinner() {
