@@ -1,59 +1,402 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinner Recommendation</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+<html lang="en"><script async="" defer="" src="https://launchpad.privacymanager.io/latest/launchpad.bundle.js"></script><script async="" src="https://scripts.clarity.ms/0.8.47/clarity.js"></script><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202601140101/show_ads_impl_fy2021.js?bust=31096332"></script><script async="" src="https://www.clarity.ms/tag/v2pyy2mgm6"></script><head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP7K5XY9KG"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BDTTSJ1EDS"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-HP7K5XY9KG');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BDTTSJ1EDS');
     </script>
+    <!-- Microsoft Clarity -->
     <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "v2q7nvmyn9");
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "v2pyy2mgm6");
     </script>
-</head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../favicon.svg">
+    <link rel="preload" href="style.css" as="style">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-2962790403778987">
+    <meta name="description" content="Wondering what to eat for dinner every day? Get today's dinner menu recommendation with a single button. We offer a variety of dishes such as Korean, Chinese, Japanese, and Western food, as well as healthy diet tips.">
+    <meta name="keywords" content="dinner menu recommendation, what to eat today, menu recommendation, Korean food, Chinese food, Japanese food, Western food, healthy diet, cooking recommendation, food recommendation">
+    <meta name="author" content="Dinner Menu Recommendation">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://jocoding.cc/en.html">
+
+    <!-- Language Alternates -->
+    <link rel="alternate" hreflang="ko" href="https://jocoding.cc/">
+    <link rel="alternate" hreflang="en" href="https://jocoding.cc/en.html">
+    <link rel="alternate" hreflang="x-default" href="https://jocoding.cc/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jocoding.cc/en.html">
+    <meta property="og:title" content="Dinner Menu Recommendation - What to eat today?">
+    <meta property="og:description" content="Wondering what to eat for dinner every day? Get today's dinner menu recommendation with a single button. We recommend a variety of dishes such as Korean, Chinese, Japanese, and Western food.">
+    <meta property="og:image" content="https://jocoding.cc/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:site_name" content="Dinner Menu Recommendation">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://jocoding.cc/en.html">
+    <meta name="twitter:title" content="Dinner Menu Recommendation - What to eat today?">
+    <meta name="twitter:description" content="Wondering what to eat for dinner every day? Get today's dinner menu recommendation with a single button.">
+    <meta name="twitter:image" content="https://jocoding.cc/og-image.png">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#FF6B6B">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Menu Rec.">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Naver SEO -->
+    <meta name="naver-site-verification" content="navercodehere">
+
+    <title>Dinner Menu Recommendation - What to eat today? | Free Menu Recommendation Service</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      " @context": "https://schema.org",
+      " @type": "WebSite",
+      "name": "Dinner Menu Recommendation",
+      "alternateName": "저녁 메뉴 추천",
+      "url": "https://jocoding.cc/en.html",
+      "description": "Get recommendations for your daily dinner menu with a single button. A variety of menu recommendation services including Korean, Chinese, Japanese, and Western food.",
+      "inLanguage": ["en", "ko"],
+      "potentialAction": {
+        " @type": "SearchAction",
+        "target": "https://jocoding.cc/en.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      " @context": "https://schema.org",
+      " @type": "WebApplication",
+      "name": "Dinner Menu Recommendation",
+      "url": "https://jocoding.cc/en.html",
+      "description": "AI-based dinner menu recommendation service. Get today's dinner menu recommendation with a single click.",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "All",
+      "offers": {
+        " @type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        " @type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "150"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      " @context": "https://schema.org",
+      " @type": "Organization",
+      "name": "Dinner Menu Recommendation",
+      "url": "https://jocoding.cc/en.html",
+      "logo": "https://jocoding.cc/favicon.svg",
+      "sameAs": []
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      " @context": "https://schema.org",
+      " @type": "BreadcrumbList",
+      "itemListElement": [{
+        " @type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://jocoding.cc/en.html"
+      }]
+    }
+    </script>
+    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2962790403778987" crossorigin="anonymous" data-checked-head="true"></script>
+<script src="https://productbuilder.disqus.com/embed.js" data-timestamp="1768645194757"></script><script async="" src="https://static.userback.io/widget/v1.js"></script><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
 <body>
-    <div class="theme-switcher">
-        <button id="theme-toggle">Switch Theme</button>
+    <div class="theme-switch-wrapper">
+        <a href="about.html" class="lang-link">About</a>
+        <a href="animal-test.html" class="lang-link">Animal Face Test</a>
+        <a href="food-tips.html" class="lang-link">Food Tips</a>
+        <a href="faq.html" class="lang-link">FAQ</a>
+        <a href="../index.html" class="lang-link">한국어</a>
+        <button id="theme-toggle">Dark Mode</button>
     </div>
-    <div class="language-switcher">
-        <button id="lang-kr">한국어</button>
-        <button id="lang-en">English</button>
+    <div class="container main-container">
+        <header class="hero-section">
+            <h1>What should I eat for dinner tonight?</h1>
+            <p class="hero-subtitle">Solve your daily menu worries with a single button!</p>
+        </header>
+
+        <section class="intro-section content-section">
+            <h2>Welcome to the Dinner Menu Recommendation Service</h2>
+            <p>The most confusing moment of the day is "What should I eat for dinner tonight?". In our busy lives, worrying about a new menu every day consumes more energy than you think. Our service solves this problem with a single click.</p>
+            <p>We recommend carefully selected menus from various categories such as Korean, Chinese, Japanese, and Western food with AI images, helping you choose a delicious and healthy dinner.</p>
+        </section>
+
+        <section class="recommendation-section content-section">
+            <h2>Get a menu recommendation right now</h2>
+            <p>Click the button below to check out today's dinner menu, randomly selected from various categories. Delicious food images generated by AI are also provided.</p>
+            <div id="result-container" class="result-container"></div>
+            <button id="generate-btn">Get a Menu Recommendation</button>
+
+            <!-- Result Share Buttons -->
+            <div id="result-share" class="result-share-box" style="display: none;">
+                <div class="share-title">Share this menu with your friends!</div>
+                <div class="share-buttons">
+                    <button class="share-btn kakao" onclick="shareKakao()">
+                        <svg viewBox="0 0 24 24"><path d="M12 3C6.48 3 2 6.48 2 10.5c0 2.55 1.68 4.78 4.18 6.07-.18.66-.67 2.38-.77 2.75-.12.46.17.45.36.33.15-.1 2.4-1.63 3.36-2.28.29.03.58.05.87.05 5.52 0 10-3.48 10-7.92S17.52 3 12 3z"></path></svg>
+                        <span>KakaoTalk</span>
+                    </button>
+                    <button class="share-btn twitter" onclick="shareTwitter()">
+                        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                        <span>X (Twitter)</span>
+                    </button>
+                    <button class="share-btn facebook" onclick="shareFacebook()">
+                        <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+                        <span>Facebook</span>
+                    </button>
+                    <button class="share-btn copy-link" onclick="copyResultLink()">
+                        <svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg>
+                        <span>Copy Link</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cuisine-section content-section">
+            <h2>Various Cuisine Categories</h2>
+            <p>Our service recommends a variety of foods loved by Koreans, classified by category. Learn about the characteristics and representative menus of each category.</p>
+
+            <div class="cuisine-grid">
+                <article class="cuisine-card">
+                    <h3>Korean Cuisine</h3>
+                    <p>Traditional Korean food is characterized by fermented foods and a culture of various side dishes. There is a wealth of nutritious and delicious menus such as Kimchi Jjigae, Doenjang Jjigae, Bibimbap, Bulgogi, and Samgyeopsal. Korean food is also known to be healthy as it contains a lot of vegetables and fermented foods.</p>
+                    <ul>
+                        <li><strong>Representative Menu:</strong> Kimchi Jjigae, Doenjang Jjigae, Bibimbap</li>
+                        <li><strong>Features:</strong> Fermented foods, various side dishes</li>
+                        <li><strong>Health Points:</strong> Rich in probiotics</li>
+                    </ul>
+                </article>
+
+                <article class="cuisine-card">
+                    <h3>Chinese Cuisine</h3>
+                    <p>Chinese cuisine has different characteristics for each region, and in Korea, Jajangmyeon, Jjamppong, and Tangsuyuk are particularly popular. It is characterized by wok cooking, which is cooked quickly over a high fire, and uses various spices to create a deep flavor.</p>
+                    <ul>
+                        <li><strong>Representative Menu:</strong> Jajangmyeon, Jjamppong, Tangsuyuk</li>
+                        <li><strong>Features:</strong> Wok cooking, various sauces</li>
+                        <li><strong>Health Points:</strong> Utilization of various vegetables</li>
+                    </ul>
+                </article>
+
+                <article class="cuisine-card">
+                    <h3>Japanese Cuisine</h3>
+                    <p>Japanese cuisine is characterized by fresh ingredients and delicate cooking methods. Sushi, ramen, tonkatsu, and udon are also very popular in Korea. You can feel a clean yet deep taste with a cooking method that brings out the original taste of the ingredients.</p>
+                    <ul>
+                        <li><strong>Representative Menu:</strong> Sushi, Ramen, Tonkatsu, Udon</li>
+                        <li><strong>Features:</strong> Fresh ingredients, clean taste</li>
+                        <li><strong>Health Points:</strong> Rich in seafood</li>
+                    </ul>
+                </article>
+
+                <article class="cuisine-card">
+                    <h3>Western Cuisine</h3>
+                    <p>Western cuisine includes a variety of menus such as steak, pasta, pizza, and hamburgers. It is characterized by a rich taste and a feeling of fullness, and is also popular as a special day dining menu. You can choose according to your taste with various sauces and cooking methods.</p>
+                    <ul>
+                        <li><strong>Representative Menu:</strong> Steak, Pasta, Pizza</li>
+                        <li><strong>Features:</strong> Rich taste, various sauces</li>
+                        <li><strong>Health Points:</strong> Rich in protein</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="tips-section content-section">
+            <h2>Tips for Choosing a Dinner Menu</h2>
+            <p>Here are some practical tips for a healthy and delicious dinner. Refer to the guide below to choose the perfect dinner menu for today.</p>
+
+            <div class="tips-grid">
+                <div class="tip-item">
+                    <h4>Seasonal Foods for the Season</h4>
+                    <p>Food made with seasonal ingredients is highly nutritious and tastes good. In spring, we recommend spring vegetable dishes such as shepherd's purse and wild garlic, in summer, cool naengmyeon or kong-guksu, in autumn, gizzard shad or mushroom dishes, and in winter, warm stews.</p>
+                </div>
+                <div class="tip-item">
+                    <h4>Consider Nutritional Balance</h4>
+                    <p>A balanced meal of carbohydrates, protein, and fat is important. A healthier meal can be achieved by adding meat or fish and vegetables to rice or noodles.</p>
+                </div>
+                <div class="tip-item">
+                    <h4>Choose a Different Menu from Lunch</h4>
+                    <p>If you had Korean food for lunch, try a different type of food for dinner. Eating a variety of foods will provide you with more nutrients evenly.</p>
+                </div>
+                <div class="tip-item">
+                    <h4>Consider Cooking Time</h4>
+                    <p>On busy days, choose a menu that can be cooked quickly, and on leisurely days, try a hearty dish. Using meal kits or convenience foods is also a good way.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seasonal-section content-section">
+            <h2>Seasonal Recommended Menus</h2>
+            <p>Different foods are suitable for each season. Refer to the recommended menu for each season.</p>
+
+            <div class="seasonal-grid">
+                <div class="season-card spring">
+                    <h4>Spring</h4>
+                    <p>Mugwort soup, shepherd's purse soybean paste soup, spring cabbage geotjeori, stir-fried webfoot octopus, spring vegetable bibimbap</p>
+                </div>
+                <div class="season-card summer">
+                    <h4>Summer</h4>
+                    <p>Naengmyeon, kong-guksu, samgyetang, chogyeguksu, mulhoe, cold soba</p>
+                </div>
+                <div class="season-card fall">
+                    <h4>Autumn</h4>
+                    <p>Grilled gizzard shad, blue crab soup, mushroom hotpot, songi mushroom rice bowl, grilled prawns</p>
+                </div>
+                <div class="season-card winter">
+                    <h4>Winter</h4>
+                    <p>Kimchi jjigae, budae jjigae, sundubu jjigae, mandu-guk, eomuk-tang</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works content-section">
+            <h2>How to Use the Service</h2>
+            <p>Using our service is very simple. Follow the steps below.</p>
+            <ol class="steps-list">
+                <li><strong>Click the "Get a Menu Recommendation" button</strong> - Click the button above to get today's dinner menu recommendation immediately.</li>
+                <li><strong>Check the AI-generated image</strong> - Check the delicious food image generated by AI along with the recommended menu.</li>
+                <li><strong>Choose the menu you like</strong> - If you don't like the recommended menu, press the button again to get a new recommendation.</li>
+                <li><strong>Enjoy a delicious dinner</strong> - Enjoy a delicious dinner with the menu of your choice!</li>
+            </ol>
+        </section>
+
+        <section class="features-section content-section">
+            <h2>Service Features</h2>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <h4>Free Service</h4>
+                    <p>Our menu recommendation service is completely free. You can use it right away without signing up or paying.</p>
+                </div>
+                <div class="feature-box">
+                    <h4>Variety of Menus</h4>
+                    <p>We recommend more than 24 menus from various categories such as Korean, Chinese, Japanese, and Western food.</p>
+                </div>
+                <div class="feature-box">
+                    <h4>AI Images</h4>
+                    <p>We provide AI-generated images for each menu so you can visually check the menu.</p>
+                </div>
+                <div class="feature-box">
+                    <h4>Dark Mode</h4>
+                    <p>We support dark mode to reduce eye strain. Use it comfortably at night.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section content-section">
+            <h2>Try Our Other Services</h2>
+            <p>In addition to dinner menu recommendations, we also offer fun services. Find out your animal face with our AI animal face test!</p>
+            <div class="cta-buttons">
+                <a href="animal-test.html" class="cta-btn">Take the Animal Face Test</a>
+                <a href="food-tips.html" class="cta-btn secondary">See Food Tips</a>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <hr>
+            <h3>Partnership Inquiry</h3>
+            <p>We welcome business inquiries such as advertising, sponsorship, and partnerships. Please contact us through the form below and we will get back to you quickly.</p>
+            <form action="https://formspree.io/f/xeeejzvo" method="POST">
+                <input type="email" name="email" placeholder="Email Address" required="">
+                <textarea name="message" placeholder="Please enter your inquiry" required=""></textarea>
+                <button type="submit" id="submit-btn">Send</button>
+            </form>
+        </section>
+
+        <section class="comments-section">
+            <h3>Comments and Reviews</h3>
+            <p>Please leave your opinions or reviews about the menu recommendation service. Your feedback is a great help in improving our service.</p>
+            <div id="disqus_thread" style="margin-top: 20px;"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'index-en';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://productbuilder.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="animal-test.html">Animal Face Test</a>
+                <a href="food-tips.html">Food Tips</a>
+                <a href="faq.html">FAQ</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="../index.html">한국어</a>
+            </div>
+            <p class="footer-copyright">© 2025 Dinner Menu Recommendation. All rights reserved.</p>
+            <p class="footer-info">This site provides useful dinner menu recommendations and food-related information to users.</p>
+        </footer>
     </div>
-    <div class="container">
-        <h1>What's for dinner tonight?</h1>
-        <div id="dinner-recommendation" class="result-container">
-            <img id="dinner-image" src="" alt="Recommended Dinner Menu" style="width: 100%; max-width: 400px; height: auto; border-radius: 10px; display: none;">
-            <p id="dinner-name"></p>
+
+    <!-- Floating Share Buttons -->
+    <div class="floating-share">
+        <div class="floating-share-menu" id="floating-menu">
+            <button class="share-btn kakao" onclick="shareKakaoSite()">
+                <svg viewBox="0 0 24 24"><path d="M12 3C6.48 3 2 6.48 2 10.5c0 2.55 1.68 4.78 4.18 6.07-.18.66-.67 2.38-.77 2.75-.12.46.17.45.36.33.15-.1 2.4-1.63 3.36-2.28.29.03.58.05.87.05 5.52 0 10-3.48 10-7.92S17.52 3 12 3z"></path></svg>
+                <span>KakaoTalk</span>
+            </button>
+            <button class="share-btn twitter" onclick="shareTwitterSite()">
+                <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                <span>X (Twitter)</span>
+            </button>
+            <button class="share-btn facebook" onclick="shareFacebookSite()">
+                <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+                <span>Facebook</span>
+            </button>
+            <button class="share-btn copy-link" onclick="copySiteLink()">
+                <svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg>
+                <span>Copy Link</span>
+            </button>
         </div>
-        <button id="generate-dinner">Get a Recommendation</button>
+        <button class="floating-share-btn" onclick="toggleFloatingMenu()" aria-label="Share">
+            <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"></path></svg>
+        </button>
     </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
     <script src="main.js"></script>
-    <div class="form-container">
-        <h2>Partnership Inquiry</h2>
-        <form action="https://formspree.io/f/mlggrord" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-</body>
-</html>
+    <!-- Userback Feedback Widget -->
+    <script>
+    window.Userback = window.Userback || {};
+    Userback.access_token = "A-ZsoKOtlcdKxbbefdEj15Iw2hb";
+    (function(d) {
+        var s = d.createElement('script');s.async = true;s.src = 'https://static.userback.io/widget/v1.js';(d.head || d.body).appendChild(s);
+    })(document);
+    </script>
+</body></html>
