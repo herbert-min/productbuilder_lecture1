@@ -1,1 +1,51 @@
-main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP7K5XY9KG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-HP7K5XY9KG');
+    </script>
+</head>
+<body>
+    <div class="theme-switcher">
+        <button id="theme-toggle">Switch Theme</button>
+    </div>
+    <div class="language-switcher">
+        <button id="lang-kr">한국어</button>
+        <button id="lang-en">English</button>
+    </div>
+    <div class="container">
+        <h1>What's for dinner tonight?</h1>
+        <div id="dinner-recommendation" class="result-container">
+            <img id="dinner-image" src="" alt="Recommended Dinner Menu" style="width: 100%; max-width: 400px; height: auto; border-radius: 10px; display: none;">
+            <p id="dinner-name"></p>
+        </div>
+        <button id="generate-dinner">Get a Recommendation</button>
+    </div>
+    <script src="main.js"></script>
+    <div class="form-container">
+        <h2>Partnership Inquiry</h2>
+        <form action="https://formspree.io/f/mlggrord" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
